@@ -62,34 +62,34 @@
 
 //Добавить пользователя в команду
 function addUser(){
-    //!VIEW
-    const usersList = document.querySelector('.users-list');
-    const dreamTeamList = document.querySelector('.dream-team');
+    // //!VIEW
+    // const usersList = document.querySelector('.users-list');
+    // const dreamTeamList = document.querySelector('.dream-team');
 
     //!VIEW
-    usersList.addEventListener('click', ev => {
-        const uuid = ev.target.dataset.userId;
-        console.log(uuid);
-        if(uuid){
+    // usersList.addEventListener('click', ev => {
+        // const uuid = ev.target.dataset.userId;
+        // console.log(uuid);
+        // if(uuid){
             //!MODEL
-            const { picture, name } = data.users.find(user => user.login.uuid == uuid);
+            // const { picture, name } = data.users.find(user => user.login.uuid == uuid);
             //!VIEW
-            dreamTeamList.innerHTML += `<div class="card mb-3" style="max-width: 240px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="${ picture.thumbnail }" class="card-img">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h6 class="card-title">${ name.first } ${ name.last }</h6>
-                </div>
-              </div>
-            </div>
-          </div>`;
+          //   dreamTeamList.innerHTML += `<div class="card mb-3" style="max-width: 240px;">
+          //   <div class="row no-gutters">
+          //     <div class="col-md-4">
+          //       <img src="${ picture.thumbnail }" class="card-img">
+          //     </div>
+          //     <div class="col-md-8">
+          //       <div class="card-body">
+          //         <h6 class="card-title">${ name.first } ${ name.last }</h6>
+          //       </div>
+          //     </div>
+          //   </div>
+          // </div>`;
 
-        }
-    });
-}
+//         }
+//     });
+// }
 
 
 

@@ -1,6 +1,9 @@
 export default class ViewUsersList{
     usersList = document.querySelector('.users-list');
 
+    constructor(handleAddToTeam){
+        this.usersList.addEventListener('click', handleAddToTeam);
+    }
     render(data){
         this.usersList.innerHTML = data.map(this.renderCard).join(' ');
     }

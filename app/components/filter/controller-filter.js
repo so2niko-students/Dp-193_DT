@@ -10,6 +10,7 @@ export default class ControllerFilter{
         this.notify = notify;
 
         subscribe(events.LOAD_USERS, this.handleLoadUsers);
+        console.log('contoller filter is subscribed');
     }
 
     handleFilterClick = ev => {
@@ -26,6 +27,5 @@ export default class ControllerFilter{
     handleLoadUsers = users => {
         this.model.data = users;
     }
-
 
 }

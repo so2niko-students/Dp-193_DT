@@ -1,6 +1,7 @@
 const eventNames = {
-    LOAD_USERS : 'LOAD_USERS',
-    FILTER_AGE : 'FILTER_AGE'
+    LOAD_USERS : 'Load users from API',
+    FILTER_AGE : 'Filter by age',
+    ADD_MEMBER : 'Add member to team'
 };
 
 export default eventNames;
